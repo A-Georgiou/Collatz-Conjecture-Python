@@ -9,10 +9,9 @@ def collatz(number: int) -> int:
     while number != 1:
         if number % 2:
             number = number * 3 + 1
-            appendCollatz.append(number)
         else:
             number //= 2
-            appendCollatz.append(number)
+        appendCollatz.append(number)
         count += 1 #Number of Steps Taken
     return count
 
